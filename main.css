@@ -1,3 +1,52 @@
+/* Header part */
+.header {
+    height: 320px;
+    background-color:  #23b2ee;
+
+}
+.header .title {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1 {
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    font-size: 100px;
+}
+.header h2 {
+    text-align: center;
+    color: #dedede;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.header .line {
+    height: 20px;
+    background-color: black;
+    margin-bottom:0;
+}
 body {
-    background-color: #d9d9d9;
+    background-color: #fbfbfb;
+}
+.content {
+    margin-top: 100px;
+}
+.content img {
+    width: 1000px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .row .col {
+    flex-basis: 45%;
+    margin-top: 20px;
+  }
+
+.content q {
+    font-size: 30px;
 }
