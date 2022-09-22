@@ -105,10 +105,34 @@ footer {
 .color-dark-grey {
     color: #5a5a5a;
 }
-
+.background-color-light-grey {
+    background-color: #e7e7e7;
+}
 
 /* Margin */
 
 .mr-20px {
     margin-right: 20px;
+}
+
+.mt-150px {
+    margin-top: 150px;
+}
+
+/* Padding */
+.p-20px {
+    padding: 20px;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+}
+.link-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #23b2ee;
+    color: white;
 }
