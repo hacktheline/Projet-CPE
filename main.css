@@ -1,84 +1,114 @@
 /* Header part */
-    header {
-        height: 320px;
-        background-color:  #23b2ee;
 
-    }
-    header .title {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    header h1 {
-        text-align: center;
-        color: white;
-        font-family: fantasy;
-        font-size: 100px;
-    }
-    header h2 {
-        text-align: center;
-        color: #dedede;
-        font-family: fantasy;
-        font-size: 20px;
-    }
+header {
+    height: 320px;
+    background-color: #23b2ee;
+}
 
-    header .line {
-        height: 20px;
-        background-color: black;
-        margin-bottom:0;
-    }
+header .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    font-size: 100px;
+}
+
+header h2 {
+    text-align: center;
+    color: #dedede;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+header .line {
+    height: 20px;
+    background-color: black;
+    margin-bottom: 0;
+}
+
+
 /* Body part */
-    body {
-        background-color: #fbfbfb;
-    }
-    .content {
-        margin-top: 100px;
-    }
-    .content q {
-        font-size: 30px;
-    }
-/* Footer */
-    footer {
-        margin-top: 50px;
-        background-color: black;
-        height: 300px;
-    }
 
+body {
+    background-color: #fbfbfb;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.content q {
+    font-size: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    height: 300px;
+}
 
 
 /* Tool */
-    /* Gestion des lignes et des colonnes */
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    
-    .row .col-2 {
-        flex-basis: 45%;
-        margin-top: 20px;
-    }
-    .row .col-3 {
-        flex-basis: 30%;
-        margin-top: 20px;
-    }
-    /* Positionnement */
-    .center {
-        margin-top: 150px;
-        text-align: center;
-    }
-    /* Image */
-    .big-image {
-        width: 900px;
-    }
-    .medium-image {
-        width: 400px;
-    }
-    .small-image {
-        width: 200px;
-    }
 
-    /* Color */
-    .color-dark-grey {
-        color: #5a5a5a;
-    }
+
+/* Gestion des lignes et des colonnes */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row .col-2 {
+    flex-basis: 45%;
+    margin-top: 20px;
+}
+
+.row .col-3 {
+    flex-basis: 30%;
+    margin-top: 20px;
+}
+
+
+/* Positionnement */
+
+.center {
+    text-align: center;
+}
+
+
+/* Image */
+
+.big-image {
+    width: 900px;
+}
+
+.medium-image {
+    width: 400px;
+}
+
+.small-image {
+    width: 200px;
+}
+
+
+/* Color */
+
+.color-dark-grey {
+    color: #5a5a5a;
+}
+
+
+/* Margin */
+
+.mr-20px {
+    margin-right: 20px;
+}
