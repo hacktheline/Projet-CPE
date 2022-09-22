@@ -33,8 +33,14 @@ body {
 .content {
     margin-top: 100px;
 }
-.content img {
-    width: 1000px;
+.content .big-image {
+    width: 900px;
+}
+.content .medium-image {
+    width: 400px;
+}
+.content .small-image {
+    width: 100px;
 }
 .row {
     display: flex;
