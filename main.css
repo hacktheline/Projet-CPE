@@ -3,6 +3,8 @@
 header {
     height: 320px;
     background-color: #23b2ee;
+    background-image: url("img/bg.jpg");
+    background-size: 100vw ;
 }
 
 header .title {
@@ -77,6 +79,10 @@ footer {
     margin-top: 20px;
 }
 
+.row .col-5 {
+    flex-basis: 19%;
+    margin-top: 20px;
+}
 
 /* Positionnement */
 
@@ -92,11 +98,11 @@ footer {
 }
 
 .medium-image {
-    width: 25vw;
+    width: 20vw;
 }
 
 .small-image {
-    width: 20vh;
+    width: 10vh;
 }
 
 
