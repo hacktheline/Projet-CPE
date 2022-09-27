@@ -119,6 +119,10 @@ footer {
     margin-top: 150px;
 }
 
+.mt-20px {
+    margin-top: 20px;
+}
+
 /* Padding */
 .p-20px {
     padding: 20px;
@@ -136,7 +140,14 @@ a {
     background-color: #23b2ee;
     color: white;
 }
-
+.link-button:hover {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 27px;
+    padding-left: 27px;
+    background-color: #23b2ee;
+    color: white;
+}
 
 /* Center */
 input[type=text] {
@@ -158,4 +169,10 @@ textarea {
 }
 input[type=text]:hover{
     border: solid blue 1px; 
+}
+
+.paragraphe {
+    width: 70vw;
+    font-size: 20px;
+    line-break: auto;
 }
