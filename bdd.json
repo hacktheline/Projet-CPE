@@ -1,0 +1,24 @@
+{
+    "article-list": 
+    [
+        {
+            "id": "1",
+            "name": "big funbox",
+            "prix": "50€",
+            "poids": "30kg",
+        },
+        {
+            "id": "2",
+            "name": "small funbox",
+            "prix": "30€",
+            "poids": "20kg",
+        },
+        {
+            "id": "3",
+            "name": "medium funbox",
+            "prix": "40€",
+            "poids": "25kg",
+        },
+
+    ]
+}
