@@ -2,23 +2,26 @@
     "article-list": 
     [
         {
-            "id": "1",
+            "id": 0,
             "name": "big funbox",
-            "prix": "50€",
+            "prix": 50,
             "poids": "30kg",
+            "img": "img/Funbox1.jpg"
         },
         {
-            "id": "2",
+            "id": 1,
             "name": "small funbox",
-            "prix": "30€",
+            "prix": 30,
             "poids": "20kg",
+            "img": "img/Funbox1.jpg"
         },
         {
-            "id": "3",
+            "id": 2,
             "name": "medium funbox",
-            "prix": "40€",
+            "prix": 40,
             "poids": "25kg",
-        },
+            "img": "img/Funbox1.jpg"
+        }
 
     ]
 }
