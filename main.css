@@ -88,15 +88,15 @@ footer {
 /* Image */
 
 .big-image {
-    width: 900px;
+    width: 35vw;
 }
 
 .medium-image {
-    width: 400px;
+    width: 25vw;
 }
 
 .small-image {
-    width: 200px;
+    width: 20vh;
 }
 
 
@@ -135,4 +135,27 @@ a {
     padding-left: 25px;
     background-color: #23b2ee;
     color: white;
+}
+
+
+/* Center */
+input[type=text] {
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    width:40vw;
+    height: 4vh;
+    border: solid #b1b1ee 1px;
+}
+textarea {
+    margin-top: 10px;
+    resize: none;
+    border: none;
+    border-radius: 20px;
+    width:40vw;
+    height: 30vh;
+    border: solid #b1b1ee 1px;    
+}
+input[type=text]:hover{
+    border: solid blue 1px; 
 }
