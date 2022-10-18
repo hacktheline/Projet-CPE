@@ -3,25 +3,81 @@
     [
         {
             "id": 0,
-            "name": "big funbox",
+            "nom": "Funbox antique",
+            "description": "une vraie arme pour reussir dans la vie",
             "prix": 50,
             "poids": "30kg",
-            "img": "img/Funbox1.jpg"
+            "quantité": 5,
+            "provenance":"Grèce antique",
+            "img": "img/Funbox_latin/Funbox1.png",
+            "calque1":0
+
         },
         {
             "id": 1,
-            "name": "small funbox",
+            "nom": "Funbox de Sam",
+            "description": "la AK qui va faire vibrer ton coeur",
             "prix": 30,
             "poids": "20kg",
-            "img": "img/Funbox1.jpg"
+            "quantité": 5,
+            "provenance":"USA",
+            "img": "img/Funbox_americain/Funbox1.png",
+            "calque1":"img/Funbox/Calque1/sam.png"
+
         },
         {
             "id": 2,
-            "name": "medium funbox",
+            "nom": "Funbox spatiale",
+            "description": "t'es plutot kalash ou bien lance roquette ?",
             "prix": 40,
             "poids": "25kg",
-            "img": "img/Funbox1.jpg"
+            "quantité": 5,
+            "provenance":"Lune",
+            "img": "img/Funbox_spatiale/Funbox1.png",
+            "calque1":"img/Funbox/Calque1/spatiale.png"
+        },
+        {
+            "id": 3,
+            "nom": "Funbox noel",
+            "description": "t'es plutot kalash ou bien lance roquette ?",
+            "prix": 40,
+            "poids": "25kg",
+            "quantité": 5,
+            "provenance":"Pole nord",
+            "img": "img/Funbox_noel/funbox.png",
+            "calque1":"img/Funbox/Calque1/noel.png"
+        },
+        {
+            "id": 4,
+            "nom": "Funbox picsou",
+            "description": "t'es plutot kalash ou bien lance roquette ?",
+            "prix": 40,
+            "poids": "25kg",
+            "quantité": 5,
+            "provenance":"Pole nord",
+            "img": "img/Funbox_picsou/funbox.png",
+            "calque1":"img/Funbox/Calque1/picsou.png"
+        },
+        {
+            "id": 5,
+            "nom": "Funbox pirate",
+            "description": "t'es plutot kalash ou bien lance roquette ?",
+            "prix": 40,
+            "poids": "25kg",
+            "quantité": 5,
+            "provenance":"Caraibes",
+            "img": "img/Funbox_pirate/funbox.png",
+            "calque1":"img/Funbox/Calque1/pirate.png"
         }
 
-    ]
+    ],
+    "couleur-list":
+        {
+            "rouge":"img/Funbox/Calque0/rouge.png",
+            "vert":"img/Funbox/Calque0/vert.png",
+            "jaune":"img/Funbox/Calque0/jaune.png",
+            "cyan":"img/Funbox/Calque0/cyan.png",
+            "magenta":"img/Funbox/Calque0/magenta.png"
+
+        }
 }
