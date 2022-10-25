@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Funbox.com</title>
         <link rel="stylesheet" href="main.css"/>
+        <script src="main.js"></script>
     </head>
     <body>
         <header>
@@ -29,66 +32,18 @@
         <div class="content">
             <div class="p-20px">
             <h1 class="center">Votre panier</h1>
-            <p>Vous avez 3 articles dans votre panier</p>
+        
             <!-- 
                 Contenue du panier sous forme de row composé de 5 colonnes
                 | img | nom | prix | ... | action |
             -->
-            <div class="row">
-                <div class="col-5">
-                    <img class="small-image" src="img/Funbox1.jpg" alt="Funbox">
-                </div>
-                <div class="col-5">
-                    <p>Small FunBox</p>
-                </div>
-                <div class="col-5">
-                    <h2>30€</h2>
-                </div>
-                <div class="col-5">
-                    <h2>x3</h2>
-                </div>
-                <div class="col-5">
-                    <a href="#supprimer-<id>">Supprimer du panier</a>
-                </div>
+            <div id="mon-panier">
             </div>
-            <div class="row">
-                <div class="col-5">
-                    <img class="small-image" src="img/Funbox1.jpg" alt="Funbox">
-                </div>
-                <div class="col-5">
-                    <p>Big FunBox</p>
-                </div>
-                <div class="col-5">
-                    <h2>50€</h2>
-                </div>
-                <div class="col-5">
-                    <h2>x2</h2>
-                </div>
-                <div class="col-5">
-                    <a href="#supprimer-<id>">Supprimer du panier</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5">
-                    <img class="small-image" src="img/Funbox1.jpg" alt="Funbox">
-                </div>
-                <div class="col-5">
-                    <p>Medium FunBox</p>
-                </div>
-                <div class="col-5">
-                    <h2>40€</h2>
-                </div>
-                <div class="col-5">
-                    <h2>x4</h2>
-                </div>
-                <div class="col-5">
-                    <a href="#supprimer-<id>">Supprimer du panier</a>
-                </div>
-            </div>
-        </div>
             <br>
-            <a href="#" class="mt-150px link-button mt-150px">Passer au paiement</a>
+            <a href="#" class="center mt-150px link-button"><img class="icone" src="img/icone/paiement-securise.png" /> Passer au paiement </a>
         </div>
+
+
         <footer>
             <div class="row">
                 <div class="col-3">

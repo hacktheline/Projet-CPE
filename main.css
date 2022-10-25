@@ -97,6 +97,10 @@ footer {
     flex-basis: 19%;
     margin-top: 20px;
 }
+.row .col-6 {
+    flex-basis: 15%;
+    margin-top: 20px;
+}
 
 /* Positionnement */
 
@@ -237,6 +241,24 @@ input[type=text]:hover{
         0 0 87px rgb(230, 18, 124),
         0 0 120px rgb(230, 18, 124);
     }
+}
+
+.mini-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #23b2ee;
+    border-radius: 20px;
+    color: white;
+}
+
+.badge-green {
+    background-color:green;
+    border-radius:20px;
+    padding: 5px; 
+    color: white; 
+    font-size: 10px;
 }
 
 
