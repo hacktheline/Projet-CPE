@@ -9,8 +9,8 @@
             "poids": "30kg",
             "quantité": 5,
             "provenance":"Grèce antique",
-            "img": "img/Funbox_latin/Funbox1.png",
-            "calque1":0
+            "img": "img/funbox_antique.png",
+            "calque1":"img/Funbox/Calque1/sam.png"
 
         },
         {
@@ -21,7 +21,7 @@
             "poids": "20kg",
             "quantité": 5,
             "provenance":"USA",
-            "img": "img/Funbox_americain/Funbox1.png",
+            "img": "img/funbox_sam.png",
             "calque1":"img/Funbox/Calque1/sam.png"
 
         },
@@ -33,7 +33,7 @@
             "poids": "25kg",
             "quantité": 5,
             "provenance":"Lune",
-            "img": "img/Funbox_spatiale/Funbox1.png",
+            "img": "img/funbox_spatiale.png",
             "calque1":"img/Funbox/Calque1/spatiale.png"
         },
         {
@@ -44,7 +44,7 @@
             "poids": "25kg",
             "quantité": 5,
             "provenance":"Pole nord",
-            "img": "img/Funbox_noel/funbox.png",
+            "img": "img/funbox_noel.png",
             "calque1":"img/Funbox/Calque1/noel.png"
         },
         {
@@ -55,7 +55,7 @@
             "poids": "25kg",
             "quantité": 5,
             "provenance":"Pole nord",
-            "img": "img/Funbox_picsou/funbox.png",
+            "img": "img/funbox_picsou.png",
             "calque1":"img/Funbox/Calque1/picsou.png"
         },
         {
@@ -66,18 +66,18 @@
             "poids": "25kg",
             "quantité": 5,
             "provenance":"Caraibes",
-            "img": "img/Funbox_pirate/funbox.png",
+            "img": "img/funbox_pirate.png",
             "calque1":"img/Funbox/Calque1/pirate.png"
         }
 
     ],
     "couleur-list":
         {
-            "rouge":"img/Funbox/Calque0/rouge.png",
-            "vert":"img/Funbox/Calque0/vert.png",
-            "jaune":"img/Funbox/Calque0/jaune.png",
+            "red":"img/Funbox/Calque0/rouge.png",
+            "green":"img/Funbox/Calque0/vert.png",
+            "yellow":"img/Funbox/Calque0/jaune.png",
             "cyan":"img/Funbox/Calque0/cyan.png",
-            "magenta":"img/Funbox/Calque0/magenta.png"
+            "blue":"img/Funbox/Calque0/bleu.png"
 
         }
 }

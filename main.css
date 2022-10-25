@@ -1,10 +1,24 @@
 /* Header part */
+@-webkit-keyframes slide {
+    from{
+        background-position:1725px;
+    }
+    to{
+        background-position:575px;
+    }
+  }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 header {
     height: 320px;
     background-color: #23b2ee;
-    background-image: url("img/bg.jpg");
+    background-image: url("img/bg.png");
     background-size: 100vw ;
+    animation: slide 30s linear infinite;
 }
 
 header .title {
@@ -164,6 +178,17 @@ input[type=text] {
     height: 4vh;
     border: solid #b1b1ee 1px;
 }
+select {
+
+    appearance: none;
+    background-color: red;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 0;
+  }
 textarea {
     margin-top: 10px;
     resize: none;
@@ -181,4 +206,42 @@ input[type=text]:hover{
     width: 70vw;
     font-size: 20px;
     line-break: auto;
+}
+
+.effetneon {
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    animation: lumiere 1s infinite linear;
+}
+
+@keyframes lumiere {
+    0%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+   50%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+}
+
+
+.icone {
+    padding-right: 15px;
+    width: 30px;
+    height: 30px;
 }

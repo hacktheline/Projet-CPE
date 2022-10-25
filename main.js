@@ -25,7 +25,7 @@ function produit(jsonobject) {
     <br><span style="font-size: 30px">${this.nom}</span>
     </br>
     <p>
-        <br> Prix: ${this.prix}€
+        ${this.prix}€
     </p>
 
 </div>`;
@@ -62,14 +62,14 @@ function afficher_tous_articles() {
 }
 
 function afficher_un_article(id) {
-  var option_color = `<select onChange="generate_image(this.value,'${PRODUCT_LIST[id].calque1}')">`; // Calque0 = Choix de la couleur
+  var option_color = `<select id="select-color" onChange="generate_image(this.value,'${PRODUCT_LIST[id].calque1}',this)">`; // Calque0 = Choix de la couleur
   for (const [key, value] of Object.entries(COLOR_LIST)) {
     option_color += `<option value="${value}">${key}</option>`;
   }
   option_color += `</select>`;
   html_article_content = `<div class="row">
   <div class="col-2" id="produit-img">
-      <img class="big-image" id="produit-img-img" src="${PRODUCT_LIST[id].img}" alt="Funbox">
+      <img height="500px" width="500px" id="produit-img-img" src="${PRODUCT_LIST[id].img}" alt="Funbox">
       <canvas id="produit-img-canvas"></canvas>
   </div>                
   <div class="col-2">
@@ -77,10 +77,10 @@ function afficher_un_article(id) {
           <h1>${PRODUCT_LIST[id].nom}</h1>
           <p>${PRODUCT_LIST[id].description}</p>
           <ul>
-              <li>Livraison: 2-3 jours</li>
-              <li>Poids: ${PRODUCT_LIST[id].poids}</li>
-              <li>Provenance: ${PRODUCT_LIST[id].provenance}</li>
-              <li>Prix: ${PRODUCT_LIST[id].prix}€</li>
+              <li><img class="icone" src="img/icone/délai.png" />Livraison: 2-3 jours</li>
+              <li><img class="icone" src="img/icone/poids.png" />Poids: ${PRODUCT_LIST[id].poids}</li>
+              <li><img class="icone" src="img/icone/provenance.png" />Provenance: ${PRODUCT_LIST[id].provenance}</li>
+              <li><img class="icone" src="img/icone/prix.png" />Prix: ${PRODUCT_LIST[id].prix}€</li>
           </ul>
           <p>Couleur: ${option_color}
           </p>
@@ -95,23 +95,26 @@ function afficher_un_article(id) {
 
 
 
-function generate_image(calque0,calque1)
+function generate_image(calque0,calque1,self)
 {
-  var canvas1 = document.querySelector('#produit-img-canvas')
-  var canvas = canvas1.getContext("2d"); 
+  console.log(self.options[self.selectedIndex].text);
+  document.getElementById("select-color").style.setProperty("background-color",self.options[self.selectedIndex].text);
+  document.getElementById("produit-img").innerHTML = `<canvas height="800px" width="800px" id="produit-img-canvas" ></canvas>`;
+  var canvas_e = document.querySelector('#produit-img-canvas');
+  var ctx = canvas_e.getContext("2d");
   console.log("Changing the image");
-  var img_calque0 = new Image(); 
-  img_calque0.src = calque0; 
+  // Calque 1
   var img_calque1 = new Image(); 
-  img_calque1.src = calque1; 
-  canvas.canvas.width = img_calque1.width;
-  canvas.canvas.height = img_calque1.height;
-  canvas.drawImage(img_calque0, 0, 0,img_calque1.height,  img_calque1.width);
-  canvas.drawImage(img_calque1, 0, 0,img_calque1.height, img_calque1.width);
-
-
-  document.getElementById("produit-img-img").src = canvas1.toDataURL();
-  
+  img_calque1.src = calque1;
+  img_calque1.onload = function() {
+    ctx.drawImage(img_calque1,0,0);
+    // Calque 1
+    var img_calque0 = new Image(); 
+    img_calque0.src = calque0; 
+    img_calque0.onload = function() {
+      ctx.drawImage(img_calque0,0,0);
+    };
+  };  
  
 }
 
@@ -148,3 +151,6 @@ fetch(url)
 .catch(err => { throw err });
 
 
+// Format cookie: 
+// Panier = [{"id":<id>,"quantité":<quantité>,"modele":<modele>}]
+// Compte = ["username":<username>]
