@@ -4,60 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Funbox.com</title>
-        <link rel="stylesheet" href="main.css"/>
-        <script src="main.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="css/animation.css"/>
+        <link rel="stylesheet" href="css/body-header.css"/>
+        <link rel="stylesheet" href="css/espace.css"/>
+        <link rel="stylesheet" href="css/composants.css"/>
+        <link rel="stylesheet" href="css/nouveaux-composants.css"/>
+        <link rel="stylesheet" href="css/special.css"/>
+        <!-- end css-->
+        <!-- javascript -->
+        <script src="js/global.js"></script>
+        <script src="js/object.js"></script>
+        <script src="js/functions/affichage.js"></script>
+        <script src="js/functions/basics.js"></script>
+        <script src="js/onload.js"></script>
+        <!-- end javascript -->
     </head>
-    <body>
+    <body onload="header_load(); footer_load();">
         <header>
-            <div class="title">
-                <h1 class="effetneon">FunBox</h1>
-            </div>
-            <h2>Ici on vends du fun !</h2>
-            <div class="line"></div>
-            <div class="row background-color-dark-grey p-20px">
-                <div class="col-4 center">
-                    <a class="link-button" href="index.html">Home</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="articles.html">Shop</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="contact.html">Contact</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="panier.html">Panier</a>
-                </div>
-            </div>
         </header>
         <div class="content">
-            <div class="p-20px">
-            <h1 class="center">Votre panier</h1>
-        
+            <div class="bg-dark-blue">
+                <h1 class="center p-20px">Mon panier</h1>
+            </div>
             <!-- 
                 Contenue du panier sous forme de row composé de 5 colonnes
                 | img | nom | prix | ... | action |
             -->
-            <div id="mon-panier">
+            <div id="mon-panier" class="ml-20px">
             </div>
-            <br>
-            <a href="#" class="center mt-150px link-button"><img class="icone" src="img/icone/paiement-securise.png" /> Passer au paiement </a>
+            <div id="checkout">
+            </div>
+            <img class="small-image right-img cursor-grab" src="img/uparrow.png" onclick="window.scrollTo(0, 0);"/>
         </div>
-
-
         <footer>
-            <div class="row">
-                <div class="col-3">
-                    <div class="center">
-                        <h2 class="color-dark-grey">FunBox INC</h2>
-                    </div>
-                </div>                
-                <div class="col-3">
-                    <div class="center">
-                        <p class="color-dark-grey">Plus de 90% de nos clients sont satisfait par nos FunBOX !</p>
-                    </div>
-                    
-                </div>
-            </div>
         </footer>
     </body>
 </html>

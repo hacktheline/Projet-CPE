@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Funbox.com</title>
-        <link rel="stylesheet" href="main.css"/>
+        <!-- css -->
+        <link rel="stylesheet" href="css/animation.css"/>
+        <link rel="stylesheet" href="css/body-header.css"/>
+        <link rel="stylesheet" href="css/espace.css"/>
+        <link rel="stylesheet" href="css/composants.css"/>
+        <link rel="stylesheet" href="css/nouveaux-composants.css"/>
+        <link rel="stylesheet" href="css/special.css"/>
+        <!-- end css-->
+        <!-- javascript -->
+        <script src="js/global.js"></script>
+        <script src="js/object.js"></script>
+        <script src="js/functions/affichage.js"></script>
+        <script src="js/functions/basics.js"></script>
+        <script src="js/onload.js"></script>
+        <!-- end javascript -->
     </head>
-    <body>
+    <body onload="header_load(); footer_load();">
         <header>
-            <div class="title">
-                <h1 class="effetneon">FunBox</h1>
-            </div>
-            <h2>Ici on vends du fun !</h2>
-            <div class="line"></div>
-            <div class="row background-color-dark-grey p-20px">
-                <div class="col-4 center">
-                    <a class="link-button" href="index.html">Home</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="articles.html">Shop</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="contact.html">Contact</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="panier.html">Panier</a>
-                </div>
-            </div>
         </header>
         <div class="content">
             <div class="center">
-                <h1>Nous Contacter</h1>
-                <form method="POST" action="">
-                    <input type="text" name="email" placeholder="monemail@mail.com"/>
-                </br>
-                    <textarea  rows="5" cols="30" placeholder="Votre message....">
-
-                    </textarea>
-                    <br><br>
-                    <a href="#" class="link-button mt-150px">Envoyer</a>
-                </form>
+                <div class="bg-dark-blue">
+                    <h1 class="p-20px">Nous Contacter</h1>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <h3>Nous contacter par téléphone</h3>
+                        <h2><a href="tel:+33783667150">+33 7 83 66 71 50</a></h2>
+                    </div>
+                    <div class="col">
+                        <h3>Nous contacter par mail</h3>
+                        <p><a href="mailto:contact@funbox.com?subject=Demande%20de%20renseignements&body=Bonjour,%20je%20souhaiterais%20obtenir%20des%20renseignements%20sur" class="link-button">Envoyer un mail</a></p>
+                    </div>
+                </div>
+                <h3 class="mt-150px">Sinon vous pouvez venir nous retrouver à l'adresse </h3>
+                <h2 class="color-dark-grey">FunBox INC</h2>
+                <p class="color-dark-grey">24 Tour de la Part-Dieu<br>69000 Lyon</p>
             </div>
         </div>
         <footer>
-            <div class="row">
-                <div class="col-3">
-                    <div class="center">
-                        <h2 class="color-dark-grey">FunBox INC</h2>
-                    </div>
-                </div>                
-                <div class="col-3">
-                    <div class="center">
-                        <p class="color-dark-grey">Plus de 90% de nos clients sont satisfait par nos FunBOX !</p>
-                    </div>
-                    
-                </div>
-            </div>
         </footer>
     </body>
 </html>

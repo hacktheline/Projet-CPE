@@ -4,53 +4,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Funbox.com</title>
-        <link rel="stylesheet" href="main.css"/>
-        <script src="main.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="css/animation.css"/>
+        <link rel="stylesheet" href="css/body-header.css"/>
+        <link rel="stylesheet" href="css/espace.css"/>
+        <link rel="stylesheet" href="css/composants.css"/>
+        <link rel="stylesheet" href="css/nouveaux-composants.css"/>
+        <link rel="stylesheet" href="css/special.css"/>
+        <!-- end css-->
+        <!-- javascript -->
+        <script src="js/global.js"></script>
+        <script src="js/object.js"></script>
+        <script src="js/functions/affichage.js"></script>
+        <script src="js/functions/basics.js"></script>
+        <script src="js/onload.js"></script>
+        <!-- end javascript -->
     </head>
-    <body>
+    <body onload="header_load(); footer_load();">
         <header>
-            <div class="title">
-                <h1 class="effetneon">FunBox</h1>
-            </div>
-            <h2>Ici on vends du fun !</h2>
-            <div class="line"></div>
-            <div class="row background-color-dark-grey p-20px">
-                <div class="col-4 center">
-                    <a class="link-button" href="index.html">Home</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="articles.html">Shop</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="contact.html">Contact</a>
-                </div>
-                <div class="col-4 center">
-                    <a class="link-button" href="panier.html">Panier</a>
-                </div>
-            </div>
         </header>
         <div class="content">
-            <div style="text-align: center;">
-                <h1>Articles en vente actuellement</h1>
+            <div class="bg-dark-blue">
+                <h1 class="center p-20px">Articles en vente</h1>
             </div>
+            
             <div id="tous-articles">
                     <!-- Ici qu'on trouvera les articles -->
             </div>
+            <p class="ml-20px">Filtrer par prix: 
+                    <input type="hidden" name="prix" value=null/>
+                    <input type="radio" id="prix-50" name="prix" onchange="afficher_tous_articles(prix=this,document.querySelector(`input[name='poids']:checked`))" value="50"/><label for="prix-50"> 50€</label>
+                    <input type="radio" id="prix-40" name="prix" onchange="afficher_tous_articles(prix=this,document.querySelector(`input[name='poids']:checked`))" value="40"/><label for="prix-40"> 40€</label>
+                    <input type="radio" id="prix-30" name="prix" onchange="afficher_tous_articles(prix=this,document.querySelector(`input[name='poids']:checked`))" value="30"/><label for="prix-30"> 30€</label>
+            </p>
+            <p class="ml-20px">Filtrer par poids: 
+                <input type="radio" id="poids-30" name="poids" onchange="afficher_tous_articles(document.querySelector(`input[name='prix']:checked`),this)" value="30kg"/><label for="poids-30"> 30kg</label>
+                <input type="radio" id="poids-25" name="poids" onchange="afficher_tous_articles(document.querySelector(`input[name='prix']:checked`),this)" value="25kg"/><label for="poids-25"> 25kg</label>
+                <input type="radio" id="poids-20" name="poids" onchange="afficher_tous_articles(document.querySelector(`input[name='prix']:checked`),this)" value="20kg"/><label for="poids-20"> 20kg</label>
+            </p>
+            <img class="small-image right-img cursor-grab" src="img/uparrow.png" onclick="window.scrollTo(0, 0);"/>
         </div>
         <footer>
-            <div class="row">
-                <div class="col-3">
-                    <div class="center">
-                        <h2 class="color-dark-grey">FunBox INC</h2>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="center">
-                        <p class="color-dark-grey">Plus de 90% de nos clients sont satisfait par nos FunBOX !</p>
-                    </div>
-
-                </div>
-            </div>
         </footer>
     </body>
 
